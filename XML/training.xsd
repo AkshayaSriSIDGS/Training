@@ -1,0 +1,43 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="hotelBookings">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="hotelBooking" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="bookingId" type="xs:positiveInteger" />
+                            <xs:element name="hotelName" type="xs:string" />
+                            <xs:element name="location" type="xs:string" />
+                            <xs:element name="checkInDate" type="xs:date" />
+                            <xs:element name="checkOutDate" type="xs:date" />
+                            <xs:element name="customers" type="customers"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="customers">
+        <xs:sequence>
+            <xs:element name="customer" minOccurs="1" maxOccurs="10">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="name" type="xs:string" />
+                        <xs:element name="age" type="xs:positiveInteger" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="busBooking">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="customers" type="customers"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

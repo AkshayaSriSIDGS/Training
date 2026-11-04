@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flightBookings totalBookings="2">
+    <flightBooking>
+        <bookingId>501</bookingId>
+        <bookingStatus>CONFIRMED</bookingStatus>
+        <bookingDate>2026-11-05</bookingDate>
+
+        <passenger>
+            <passengerId>1001</passengerId>
+            <name>Anita Sharma</name>
+            <email>anita@example.com</email>
+            <contactNumbers>
+                <contactNumber>+91-9876543210</contactNumber>
+                <contactNumber>+91-9123456780</contactNumber>
+            </contactNumbers>
+        </passenger>
+
+        <flight>
+            <flightNumber>IA204</flightNumber>
+            <airline>IndianAir</airline>
+            <origination>BLR</origination>
+            <destination>DEL</destination>
+        </flight>
+    </flightBooking>
+
+    <flightBooking>
+        <bookingId>502</bookingId>
+        <bookingStatus>PENDING</bookingStatus>
+        <bookingDate>2026-11-06</bookingDate>
+
+        <passenger>
+            <passengerId>1002</passengerId>
+            <name>Rahul Verma</name>
+            <email>rahul@example.com</email>
+            <contactNumbers>
+                <contactNumber>+91-9988776655</contactNumber>
+            </contactNumbers>
+        </passenger>
+
+        <flight>
+            <flightNumber>IA310</flightNumber>
+            <airline>IndianAir</airline>
+            <origination>BLR</origination>
+            <destination>BOM</destination>
+        </flight>
+    </flightBooking>
+</flightBookings>

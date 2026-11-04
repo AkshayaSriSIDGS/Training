@@ -1,0 +1,11 @@
+<sid:flight xmlns:sid="https://sidgs.com/training/day1" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="https://sidgs.com/training/day1 flight.xsd">
+    <origination>BLR</origination>
+    <ID>1234</ID>
+    <destination>DEL</destination>
+    <price>5000</price>
+    <departureDate>2024-06-15</departureDate>
+    <airline>IndianAir</airline>
+    <discount>10</discount>
+</sid:flight>

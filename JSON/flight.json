@@ -1,0 +1,9 @@
+{
+    "ID":1234,
+    "origination":"BLR",
+    "destination":"DEL",
+    "price":5000,
+    "departureDate":"2024-06-15",
+    "airline":"IndianAir",
+    "discount":10
+}

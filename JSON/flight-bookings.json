@@ -1,0 +1,46 @@
+{
+    "totalBookings":2,
+    "bookings":[
+        {
+            "bookingID":501,
+            "bookingStatus":"Confirmed",
+            "bookingDate":"2026-11-05",
+            "passenger":{
+                "passengerid":1001,
+                "name":"Anita Sharma",
+                "email":"anita@example.com",
+                "contactNumbers":
+                [
+                    "+91-9876543210",
+                    "+91-9123456780"
+                ]
+            },
+            "flight":{
+                "flightNumber":"IA204",
+                "airline":"IndianAir",
+                "origination":"BLR",
+                "destination":"DEL"
+            }
+        },
+        {
+            "bookingID":502,
+            "bookingStatus":"pending",
+            "bookingDate":"2026-11-06",
+            "passenger":{
+                "passengerid":1002,
+                "name":"Rahul verma",
+                "email":"rahul@example.com",
+                "contactNumbers":
+                [
+                    "+91-9988776655"
+                ]
+            },
+            "flight":{
+                "flightNumber":"IA310",
+                "airline":"IndianAir",
+                "origination":"BLR",
+                "destination":"BOM"
+            }
+        }
+    ]
+}

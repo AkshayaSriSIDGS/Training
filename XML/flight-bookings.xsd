@@ -1,0 +1,44 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://flight-bookings/sidgs">
+    <xs:element name="flightBookings">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="flightBooking" type="FlightBookingType" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="totalBookings" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="FlightBookingType">
+        <xs:sequence>
+            <xs:element name="bookingID" type="xs:positiveInteger"/>
+            <xs:element name="bookingStatus" type="xs:string"/>
+            <xs:element name="bookingDate" type="xs:date"/>
+            <xs:element name="passenger" type="PassengerType"/>
+            <xs:element name="flight" type="FlightType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="passengerType">
+        <xs:sequence>
+            <xs:element name="passengerID" type="xs:positiveInteger"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="contactNumbers" type="ContactNumberType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="FlightType">
+        <xs:sequence>
+            <xs:element name="flightNumber" type="xs:string"/>
+            <xs:element name="airline" type="xs:string"/>
+            <xs:element name="origination" type="xs:string"/>
+            <xs:element name="destination" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="contactNumberType">
+        <xs:sequence>
+            <xs:element name="contactNumbers" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

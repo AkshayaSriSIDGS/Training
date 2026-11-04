@@ -1,0 +1,15 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://sidgs.com/training/day1">
+    <xs:element name="flight">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="ID" type="xs:positiveInteger"/>
+                <xs:element name="origination" type="xs:string"/>
+                <xs:element name="destination" type="xs:string"/>
+                <xs:element name="price" type="xs:positiveInteger"/>
+                <xs:element name="departureDate" type="xs:date"/>
+                <xs:element name="airline" type="xs:string"/>
+                <xs:element name="discount" type="xs:positiveInteger"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

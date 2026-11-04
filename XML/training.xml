@@ -1,0 +1,18 @@
+<hotelBookings>
+    <hotelBooking>
+        <hotelID>12</hotelID>
+        <hotelName>Abc</hotelName>
+    </hotelBooking>
+    <hotelBooking>
+        <hotelID>123</hotelID>
+        <hotelName>Xyz</hotelName>
+    </hotelBooking>
+    <hotelBooking>
+        <hotelID>1234</hotelID>
+        <hotelName>Lmn</hotelName>
+    </hotelBooking>
+    <hotelBooking>
+        <hotelID>12345</hotelID>
+        <hotelName>Hij</hotelName>
+    </hotelBooking>
+</hotelBookings>
